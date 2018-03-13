@@ -5,7 +5,7 @@ class Program
     {
 		//Here we read the inputs that comes from the console
 		//and parse them
-        string name = Console.ReadLine();
+        string names = Console.ReadLine();
         int current_health = int.Parse(Console.ReadLine());
         int maximum_health = int.Parse(Console.ReadLine());
         int current_energy = int.Parse(Console.ReadLine());
