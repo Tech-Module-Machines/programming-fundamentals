@@ -1,4 +1,3 @@
-//CONFIRMED from tsvetalintsonev
 using System;
 class Program
 {
