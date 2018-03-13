@@ -10,7 +10,7 @@ class Program
         int maximum_health = int.Parse(Console.ReadLine());
         int current_energy = int.Parse(Console.ReadLine());
         int maxium_energy = int.Parse(Console.ReadLine());
-         //and last we print them to the console 
+         //and last we print name, health and energy to the console 
         Console.WriteLine("Name: {0}", name);
         Console.WriteLine("Health: |{0}{1}|", new string('|', current_health), new string('.', maximum_health - current_health));
         Console.WriteLine("Energy: |{0}{1}|", new string('|', current_energy), new string('.', maxium_energy - current_energy));
