@@ -6,7 +6,7 @@ public class P04_BeverageLabels {
 		//We initialize the scanner to read from the console
         Scanner scan = new Scanner(System.in);
 		//the next 4 rows are what we will read
-        String product = scan.nextLine();
+        String products = scan.nextLine();
         int volume = Integer.parseInt(scan.nextLine());
         int energyPer100ml = Integer.parseInt(scan.nextLine());
         int sugarPer100ml = Integer.parseInt(scan.nextLine());
@@ -14,7 +14,7 @@ public class P04_BeverageLabels {
         BigDecimal totalEnergy = new BigDecimal(String.valueOf(energyPer100ml / 100.0 * volume));
         BigDecimal totalSugar = new BigDecimal(String.valueOf(sugarPer100ml * volume / 100.0));
      // we print the results with printf where we implemented our custom method
-        System.out.printf("%dml %s:%n", volume, product);
+        System.out.printf("%dml %s:%n", volume, products);
         System.out.printf("%skcal, %sg sugars", customRound(totalEnergy), customRound(totalSugar));
     }
       //Here is the our method for custom round
